@@ -1,0 +1,442 @@
+git add .
+<!-- Indica que el documento utiliza HTML5 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Permite usar correctamente tildes y caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- Nombre que aparece en la pestaña del navegador -->
+    <title>Mi verdadero yo</title>
+
+    <!-- Conecta el archivo HTML con el diseño CSS -->
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+
+<body>git commit -m "Primer commit"
+
+
+    <!-- ================================= -->
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- ================================= -->
+
+    <nav class="menu">
+
+        <!-- Cada botón muestra una sección diferente -->
+        <button onclick="mostrarSeccion('inicio')">Inicio</button>
+
+        <button onclick="mostrarSeccion('fotos')">Mis fotos</button>
+
+        <button onclick="mostrarSeccion('sobre-mi')">Sobre mí</button>
+
+        <button onclick="mostrarSeccion('gustos')">Mis gustos</button>
+
+        <button onclick="mostrarSeccion('instagram')">Instagram</button>
+
+        <button onclick="mostrarSeccion('cancion')">Canción</button>
+
+    </nav>
+
+
+    <!-- ================================= -->
+    <!-- INICIO -->
+    <!-- ================================= -->
+
+    <div id="inicio" class="seccion activa">
+
+        <!-- ENCABEZADO: contiene el título principal de la página -->
+        <header>
+
+            <h1>♡ Mi verdadero yo ♡</h1>
+
+            <!-- Texto debajo del título -->
+            <p class="subtitulo">
+                Conociendo un poquito más sobre mí
+            </p>
+
+        </header>
+
+
+        <!-- PRESENTACIÓN: primera información sobre mí -->
+        <section>
+
+            <h2>Hii, soy Chary 🎀</h2>
+
+            <p>
+                Bienvenidos a mi página, aquí quiero mostrar un poquito
+                sobre quién soy, mi personalidad, las cosas que me gustan
+                y algunas de las cosas que me representan.
+            </p>
+
+        </section>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- MIS FOTOS -->
+    <!-- ================================= -->
+
+    <div id="fotos" class="seccion">
+
+        <section>
+
+            <h2>Mis fotos 📸</h2>
+
+            <div class="galeria">
+
+
+                <!-- FOTO 1 -->
+                <div class="foto-card">
+
+                    <img src="imagenes/foto1.jpeg"
+                         alt="Foto 1">
+
+                    <!-- Botón para mostrar el texto -->
+                    <button class="clip" onclick="mostrarTexto(this)">📎</button>
+
+                    <!-- Texto oculto -->
+                    <p class="texto-foto">
+                        Una foto que representa un poquito de mi personalidad ♡
+                    </p>
+
+                </div>
+
+
+                <!-- FOTO 2 -->
+                <div class="foto-card">
+
+                    <img src="imagenes/foto2.jpeg"
+                         alt="Foto 2">
+
+                    <!-- Botón para mostrar el texto -->
+                    <button class="clip" onclick="mostrarTexto(this)">📎</button>
+
+                    <!-- Texto oculto -->
+                    <p class="texto-foto">
+                        Me encanta guardar recuerdos de momentos especiales 🎀
+                    </p>
+
+                </div>
+
+
+                <!-- FOTO 3 -->
+                <div class="foto-card">
+
+                    <img src="imagenes/foto3.jpeg"
+                         alt="Foto 3">
+
+                    <!-- Botón para mostrar el texto -->
+                    <button class="clip" onclick="mostrarTexto(this)">📎</button>
+
+                    <!-- Texto oculto -->
+                    <p class="texto-foto">
+                        Una parte de mí que me gusta compartir con los demás 💗
+                    </p>
+
+                </div>
+
+
+                <!-- FOTO 4 -->
+                <div class="foto-card">
+
+                    <img src="imagenes/foto4.jpeg"
+                         alt="Foto 4">
+
+                    <!-- Botón para mostrar el texto -->
+                    <button class="clip" onclick="mostrarTexto(this)">📎</button>
+
+                    <!-- Texto oculto -->
+                    <p class="texto-foto">
+                        Los pequeños momentos también pueden convertirse
+                        en grandes recuerdos ✨
+                    </p>
+
+                </div>
+
+
+                <!-- FOTO 5 -->
+                <div class="foto-card">
+
+                    <img src="imagenes/foto5.jpeg"
+                         alt="Foto 5">
+
+                    <!-- Botón para mostrar el texto -->
+                    <button class="clip" onclick="mostrarTexto(this)">📎</button>
+
+                    <!-- Texto oculto -->
+                    <p class="texto-foto">
+                        Ser yo misma es una de las cosas que más valoro ♡
+                    </p>
+
+                </div>
+
+
+                <!-- FOTO 6 -->
+                <div class="foto-card">
+
+                    <img src="imagenes/foto6.jpeg"
+                         alt="Foto 6">
+
+                    <!-- Botón para mostrar el texto -->
+                    <button class="clip" onclick="mostrarTexto(this)">📎</button>
+
+                    <!-- Texto oculto -->
+                    <p class="texto-foto">
+                        Esta soy yo, con mis gustos, mis sueños y mi esencia 🎀
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- SOBRE MÍ -->
+    <!-- ================================= -->
+
+    <div id="sobre-mi" class="seccion">
+
+        <section>
+
+            <!-- SOBRE MÍ: explica mi personalidad y forma de ser -->
+
+            <h2>¿Cómo soy? 💗</h2>
+
+            <p>
+                Soy una persona alegre, cariñosa, sensible, muy positiva,
+                aunque no siempre me sale todo bien. Me gusta
+                compartir con las personas que quiero y disfrutar de los
+                pequeños momentos. No me gusta que me traten mal.
+            </p>
+
+            <p>
+                También me considero una persona creativa. Me gustan las
+                fotos, ser yo misma, la moda y las cosas que me permiten
+                expresarme acerca de mi personalidad.
+            </p>
+
+            <p>
+                A veces puedo ser un poco reservada, pero cuando tengo
+                confianza con alguien soy muy cariñosa y divertida.
+                Siempre intento mejorar y seguir adelante con mis metas sin
+                importar lo que pase.
+            </p>
+
+        </section>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- MIS GUSTOS -->
+    <!-- ================================= -->
+
+    <div id="gustos" class="seccion">
+
+        <section>
+
+            <h2>Mis cosas favoritas ✨</h2>
+
+            <!-- Contenedor que agrupa las tarjetas -->
+            <div class="gustos">
+
+
+                <!-- TARJETA 1: música -->
+                <div class="tarjeta">
+
+                    <h3>🎶 Música</h3>
+
+                    <p>
+                        Me gusta escuchar música porque muchas canciones
+                        pueden expresar lo que siento.
+                    </p>
+
+                </div>
+
+
+                <!-- TARJETA 2: fotografías -->
+                <div class="tarjeta">
+
+                    <h3>📸 Fotos</h3>
+
+                    <p>
+                        Me encanta tomar fotos y guardar recuerdos de
+                        momentos especiales de mí o mis cercanos.
+                    </p>
+
+                </div>
+
+
+                <!-- TARJETA 3: moda -->
+                <div class="tarjeta">
+
+                    <h3>🎀 Moda</h3>
+
+                    <p>
+                        Me gusta la ropa, los diferentes estilos y poder
+                        expresar mi personalidad a través de ellos.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- INSTAGRAM -->
+    <!-- ================================= -->
+
+    <div id="instagram" class="seccion">
+
+        <section>
+
+            <h2>Mi Instagram 📱</h2>
+
+            <p>
+                Si quieres conocer un poquito más de mís vibes, puedes visitar
+                mi Instagram.
+            </p>
+
+            <!-- target="_blank" abre Instagram en otra pestaña -->
+            <a href="https://www.instagram.com/charymf"
+               target="_blank"
+               class="boton">
+
+                Visitar mi Instagram
+
+            </a>
+
+        </section>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- CANCIÓN -->
+    <!-- ================================= -->
+
+    <div id="cancion" class="seccion">
+
+        <section>
+
+            <h2>Una canción que me identifica 🎶</h2>
+
+            <p>
+                Una canción que me gusta mucho es
+                <strong>"howeetom glory"</strong> de Adele.
+            </p>
+
+            <p>
+                Me gusta porque transmite muchas emociones y es una canción
+                con la que puedo identificarme.
+            </p>
+
+
+            <!-- AUDIO -->
+            <div>
+
+                <h2>🎶 Mi canción</h2>
+
+                <!-- controls muestra los botones de reproducción -->
+                <audio controls>
+
+                    <!-- Archivo de audio -->
+                    <source src="cancion.mp3" type="audio/mpeg">
+
+                </audio>
+
+            </div>
+
+
+            <!-- VIDEO -->
+            <div>
+
+                <h2>Un video que me gusta</h2>
+
+                <video width="560" height="315" controls>
+
+                    <source
+                        src="Por una Broma Besé al Chico Emo, pero Me Enamoré de Él Perdidamente.mp4"
+                        type="video/mp4">
+
+                    Tu navegador no puede reproducir este video.
+
+                </video>
+
+            </div>
+
+
+        </section>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- PIE DE PÁGINA -->
+    <!-- ================================= -->
+
+    <footer>
+
+        <p class="centrado">Hecho por chary ♡</p>
+
+    </footer>
+
+
+    <!-- ================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================= -->
+
+    <script>
+
+
+        // Muestra solamente la sección seleccionada
+        function mostrarSeccion(seccion) {
+
+            // Busca todas las secciones que tienen la clase "seccion"
+            const secciones = document.querySelectorAll(".seccion");
+
+            // Oculta todas las secciones
+            secciones.forEach(function(elemento) {
+
+                elemento.classList.remove("activa");
+
+            });
+
+
+            // Muestra la sección seleccionada
+            document.getElementById(seccion).classList.add("activa");
+
+        }
+
+
+        // Muestra y oculta el texto de cada foto
+        function mostrarTexto(boton) {
+
+            const texto = boton.nextElementSibling;
+
+            texto.classList.toggle("mostrar");
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

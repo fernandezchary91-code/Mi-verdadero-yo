@@ -1,0 +1,328 @@
+/* ========================================= */
+/* DISEÑO GENERAL */
+/* ========================================= */
+
+body {
+
+    /* Tipo de letra */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    /* Fondo principal */
+    background-color: #fdf7f8;
+
+    /* Color general de los textos */
+    color: #4a3a40;
+
+    /* Elimina el margen del navegador */
+    margin: 0;
+
+    /* Centra los textos */
+    text-align: center;
+
+}
+
+
+/* ========================================= */
+/* MENÚ DE NAVEGACIÓN */
+/* ========================================= */
+
+.menu {
+
+    /* Menú pegado arriba */
+    position: sticky;
+
+    top: 0;
+
+    /* Fondo */
+    background-color: rgba(255, 255, 255, 0.95);
+
+    /* Espacio */
+    padding: 16px;
+
+    /* Se mantiene encima de todo */
+    z-index: 1000;
+
+    /* Línea inferior */
+    border-bottom: 1px solid #ead6dc;
+
+}
+
+
+/* BOTONES DEL MENÚ */
+
+.menu button {
+
+    /* Quita el borde */
+    border: none;
+
+    /* Fondo transparente */
+    background-color: transparent;
+
+    /* Color */
+    color: #8f5267;
+
+    /* Tamaño */
+    font-size: 15px;
+
+    /* Letras un poco gruesas */
+    font-weight: bold;
+
+    /* Espacio */
+    margin: 0 10px;
+
+    /* Espacio interno */
+    padding: 8px 5px;
+
+    /* Manito */
+    cursor: pointer;
+
+    /* Transición */
+    transition: 0.3s;
+
+}
+
+
+/* EFECTO DEL MENÚ */
+
+.menu button:hover {
+
+    /* Color rosado */
+    color: #c66b88;
+
+    /* Hace que suba un poquito */
+    transform: translateY(-2px);
+
+}
+
+
+/* ========================================= */
+/* SECCIONES */
+/* ========================================= */
+
+.seccion {
+
+    /* Oculta las secciones */
+    display: none;
+
+}
+
+
+.seccion.activa {
+
+    /* Muestra solamente la activa */
+    display: block;
+
+}
+
+
+/* ========================================= */
+/* ENCABEZADO */
+/* ========================================= */
+
+header {
+
+    /* Fondo delicado */
+    background-color: #f8e5eb;
+
+    /* Espacio */
+    padding: 90px 20px;
+
+    /* Línea decorativa */
+    border-bottom: 1px solid #edd5dc;
+
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+h1 {
+
+    /* Color */
+    color: #8f5267;
+
+    /* Tamaño */
+    font-size: 52px;
+
+    /* Peso */
+    font-weight: 500;
+
+    /* Espacio */
+    margin: 0 0 12px 0;
+
+    /* Espaciado entre letras */
+    letter-spacing: 1px;
+
+}
+
+
+/* SUBTÍTULO */
+
+.subtitulo {
+
+    /* Color */
+    color: #9c707d;
+
+    /* Tamaño */
+    font-size: 18px;
+
+    /* Estilo */
+    font-style: italic;
+
+}
+
+
+/* ========================================= */
+/* CAJAS DE CONTENIDO */
+/* ========================================= */
+
+.seccion section {
+
+    /* Fondo */
+    background-color: white;
+
+    /* Ancho */
+    width: 78%;
+
+    /* Máximo */
+    max-width: 900px;
+
+    /* Centrado */
+    margin: 45px auto;
+
+    /* Espacio */
+    padding: 45px;
+
+    /* Bordes */
+    border: 1px solid #eadde1;
+
+    /* Esquinas */
+    border-radius: 4px;
+
+    /* Sombra muy suave */
+    box-shadow: 0 8px 25px rgba(130, 80, 95, 0.08);
+
+}
+
+
+/* ========================================= */
+/* TÍTULOS */
+/* ========================================= */
+
+h2 {
+
+    /* Color */
+    color: #92536b;
+
+    /* Tamaño */
+    font-size: 30px;
+
+    /* Peso */
+    font-weight: 500;
+
+    /* Espacio */
+    margin-bottom: 25px;
+
+}
+
+
+/* Línea decorativa debajo de los títulos */
+
+h2::after {
+
+    /* Elemento decorativo */
+    content: "♡";
+
+    /* Hace que aparezca debajo */
+    display: block;
+
+    /* Color */
+    color: #d98ba5;
+
+    /* Tamaño */
+    font-size: 16px;
+
+    /* Espacio */
+    margin-top: 8px;
+
+}
+
+
+/* ========================================= */
+/* PÁRRAFOS */
+/* ========================================= */
+
+p {
+
+    /* Tamaño */
+    font-size: 17px;
+
+    /* Espacio entre líneas */
+    line-height: 1.8;
+
+}
+
+
+/* ========================================= */
+/* GALERÍA */
+/* ========================================= */
+
+.galeria {
+
+    /* Organiza las fotos */
+    display: flex;
+
+    /* Centra */
+    justify-content: center;
+
+    /* Espacio */
+    gap: 30px;
+
+    /* Permite varias filas */
+    flex-wrap: wrap;
+
+    /* Espacio arriba */
+    margin-top: 30px;
+
+}
+
+
+/* TARJETA DE FOTO */
+
+.foto-card {
+
+    /* Ancho */
+    width: 180px;
+
+    /* Fondo */
+    background-color: white;
+
+    /* Espacio */
+    padding: 10px;
+
+    /* Sombra */
+    box-shadow: 0 6px 18px rgba(120, 70, 90, 0.12);
+
+    /* Transición */
+    transition: 0.3s;
+
+}
+
+
+/* EFECTO DE LA TARJETA */
+
+.foto-card:hover {
+
+    /* Se levanta */
+    transform: translateY(-7px) rotate(-1deg);
+
+    /* Sombra más marcada */
+    box-shadow: 0 12px 25px rgba(120, 70, 90, 0.18);
+
+}
+
+
+/* ========================================= */
+/* IMÁGENES */
+/* ========================================= */
+
+.foto
